@@ -2,16 +2,29 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Malla Interactiva Ingeniería Industrial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Malla Ingeniería Industrial</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Malla Interactiva - Ingeniería Industrial</h1>
-  <div style="text-align: center; margin-bottom: 20px;">
-    <button onclick="reiniciarMalla()" style="padding: 8px 16px; font-size: 1rem; cursor: pointer;">🔄 Reiniciar malla</button>
-  </div>
-  <div id="malla-container"></div>
+  <header>
+    <h1>Malla Interactiva - Ingeniería Industrial</h1>
+    <button id="resetButton">🔄 Reiniciar malla</button>
+  </header>
+
+  <main>
+    <div class="legend">
+      <span class="legend-box not-available"></span> No habilitado
+      <span class="legend-box pending"></span> No aprobado
+      <span class="legend-box approved"></span> Aprobado
+    </div>
+    <div class="grid" id="malla"></div>
+  </main>
+
+  <footer>
+    <p>Hecho con 💡 por Victoria</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
