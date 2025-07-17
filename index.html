@@ -19,7 +19,34 @@
       <span class="legend-box pending"></span> No aprobado
       <span class="legend-box approved"></span> Aprobado
     </div>
-    <div class="grid" id="malla"></div>
+
+    <div class="malla">
+      <!-- Semestres -->
+      <div class="semestre" data-semestre="1">
+        <h2>Año 1 - Semestre I</h2>
+        <div class="ramos">
+          <div class="ramo" data-id="IWI131">Programación<br><small>IWI-131 / 5 SCT</small></div>
+          <div class="ramo" data-id="MAT021">Matemáticas I<br><small>MAT-021 / 8 SCT</small></div>
+          <div class="ramo" data-id="FIS100">Introducción a la Física<br><small>FIS-100 / 6 SCT</small></div>
+          <div class="ramo" data-id="HRW132">Humanístico I<br><small>HRW-132 / 4 SCT</small></div>
+          <div class="ramo" data-id="DEW100">Educación Física I<br><small>DEW-100 / 1 SCT</small></div>
+          <div class="ramo" data-id="QUI010">Química y Sociedad<br><small>QUI-010 / 5 SCT</small></div>
+        </div>
+      </div>
+
+      <div class="semestre" data-semestre="2">
+        <h2>Año 1 - Semestre II</h2>
+        <div class="ramos">
+          <div class="ramo" data-id="MAT022" data-prereq="MAT021">Matemáticas II<br><small>MAT-022 / 7 SCT</small></div>
+          <div class="ramo" data-id="FIS110" data-prereq="FIS100">Física General I<br><small>FIS-110 / 6 SCT</small></div>
+          <div class="ramo" data-id="IWG101" data-prereq="IWI131">Introducción a la Ingeniería<br><small>IWG-101 / 3 SCT</small></div>
+          <div class="ramo" data-id="HRW133" data-prereq="HRW132">Humanístico II<br><small>HRW-133 / 4 SCT</small></div>
+          <div class="ramo" data-id="INF101">Educación Física II<br><small>INF-101 / 1 SCT</small></div>
+        </div>
+      </div>
+
+      <!-- Más semestres serán generados dinámicamente desde script.js -->
+    </div>
   </main>
 
   <footer>
@@ -29,3 +56,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
